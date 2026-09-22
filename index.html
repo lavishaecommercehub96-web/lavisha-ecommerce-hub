@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lavisha Ecommerce Hub | Shop More • Save More</title>
+<meta name="description" content="Lavisha Ecommerce Hub — online catalogue, cart, enquiries and payment.">
+<link rel="icon" href="lavisha-logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="announcement">✨ Welcome to <b>Lavisha Ecommerce Hub</b> — Shop More ♥ Save More</div>
+<header>
+  <a class="brand" href="#home"><img src="lavisha-logo.png" alt="Lavisha Ecommerce Hub logo"><span>Lavisha <small>Ecommerce Hub</small></span></a>
+  <nav><a href="#home">Home</a><a href="#shop">Shop</a><a href="#shop">Catalogue</a><a href="#categories">Categories</a><a href="#contact">Contact</a></nav>
+  <div class="head-actions"><button onclick="openCart()">🛒 <b id="cartCount">0</b></button><button class="owner" onclick="openLogin()">🔐 Owner Login</button></div>
+</header>
+
+<section id="home" class="hero">
+ <div class="hero-copy"><span class="eyebrow">ONLINE SHOPPING • @LECOMMERCEHUB</span><h1>Discover products you'll <em>love.</em></h1><p>Browse our catalogue, add your favourites, view product links, enquire instantly and place your order online.</p><div class="hero-actions"><a class="btn primary" href="#shop">Shop Now →</a><button class="btn white" onclick="openEnquiry()">💬 Enquire</button></div><div class="trust"><span>✓ WhatsApp ordering</span><span>✓ Online payment ready</span><span>✓ Mobile friendly</span></div></div>
+ <div class="hero-logo"><img src="lavisha-logo.png" alt="Lavisha logo"></div>
+</section>
+<section class="benefits"><div>🚚 <b>Fast Delivery</b><small>Convenient ordering</small></div><div>🛡️ <b>Secure Payment</b><small>Gateway checkout ready</small></div><div>💬 <b>24/7 Enquiry</b><small>Chat on WhatsApp</small></div><div>♥ <b>Happy Shopping</b><small>Easy online catalogue</small></div></section>
+
+<main id="shop">
+ <div class="catalogue-title"><span class="eyebrow">LAVISHA ECOMMERCE HUB</span><h2>🛍️ Product Catalogue</h2><p>Browse products, open product links, add items to cart, or send an enquiry.</p></div>
+ <div class="section-head"><div><span class="eyebrow">OUR COLLECTION</span><h2>Shop products</h2></div><input id="search" placeholder="🔎 Search products..." oninput="render()"></div>
+ <div id="categories" class="chips"></div>
+ <div id="products" class="grid"></div>
+</main>
+
+<section class="instagram"><div class="insta-mark">◎</div><div><span class="eyebrow">FOLLOW LAVISHA</span><h2>@LECOMMERCEHUB</h2><p>New arrivals, offers and product updates.</p></div><a class="btn primary" href="https://instagram.com/lecommercehub" target="_blank" rel="noopener">Follow on Instagram ↗</a></section>
+<section id="contact" class="contact"><div><span class="eyebrow">NEED HELP?</span><h2>Have a question before buying?</h2><p>Send an enquiry and we'll help you with availability, price, delivery or product details.</p></div><button class="btn primary" onclick="openEnquiry()">WhatsApp Enquiry →</button></section>
+<footer><div class="footbrand"><img src="lavisha-logo.png"><div><b>Lavisha Ecommerce Hub</b><p>Shop More ♥ Save More</p></div></div><div><a href="https://instagram.com/lecommercehub" target="_blank">Instagram</a> · <button onclick="openEnquiry()">WhatsApp</button></div><small>© <span id="year"></span> Lavisha Ecommerce Hub</small></footer>
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()"><div class="modal-box"><button class="close" onclick="closeModal()">×</button><div id="modalContent"></div></div></div>
+<script src="script.js"></script>
+</body></html>
